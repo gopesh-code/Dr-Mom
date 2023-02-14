@@ -73,7 +73,7 @@ The app will be based primarily on Android given that iOS already has its own he
 Moodle will be used for submissions and communication with the professor, while WhatsApp will be used as the primary means of communication between our group members. Meanwhile Jira will be used to keep track of deadlines and project management.
 The Jira board has also been created to keep track of issues that need to be worked on and assigning contributions. It is also synced with GitHub so that issues can be resolved automatically when a relevant commit is made.
 
-![alt text](WorkBreakdown.jpg "Work Breakdown Diagram")
+![alt text](WorkBreakdon.jpg "Work Breakdown Diagram")
 
 ## Progress Overview
 
