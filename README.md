@@ -91,7 +91,7 @@ Testing | `Not Started` | To be started once the application is deployed.
 ##Process Model
 Our project follows the Agile Model, a software development approach based on iterative development. This process model breaks tasks into smaller iterations, and does not directly involve long-term planning. The project scope and requirements are laid down at the beginning of the development process.
 
-![alt text](Agile Process Model.png "Work Breakdown Diagram")
+![alt text](AgileProcessModel.png "Work Breakdown Diagram")
 
 After thorough consideration and discussion, we chose this model as it allows us to alter things at each step based on the feedback received. This model is suitable for our project because we break the work into small parts and give less window to affect the project by some errors or changes. This process also reduces time consumption.
 
