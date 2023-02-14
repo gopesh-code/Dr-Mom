@@ -88,6 +88,20 @@ Front-End Development | `Not Started` | Once all the features/functionalities an
 Back-End Development | `Not Started` | Gopesh and Adam will work on the back-end (server-side) part of the project which will span over a month and a half. Apart from this, setting up the database would be Nithin, Gopesh, and Adam’s part.
 Testing | `Not Started` | To be started once the application is deployed.
 
+##Process Model
+Our project follows the Agile Model, a software development approach based on iterative development. This process model breaks tasks into smaller iterations, and does not directly involve long-term planning. The project scope and requirements are laid down at the beginning of the development process.
+
+![alt text](WorkBreakdown.jpg "Work Breakdown Diagram")
+
+After thorough consideration and discussion, we chose this model as it allows us to alter things at each step based on the feedback received. This model is suitable for our project because we break the work into small parts and give less window to affect the project by some errors or changes. This process also reduces time consumption.
+
+The Agile Model has the following advantages:
+- Frequent delivery
+- Face-to-face communication with clients
+- Efficient design and fulfills the business requirement
+- Anytime changes are acceptable
+- It reduces total development time
+Since our product is based on feedback and innovative research into the field, it is of utmost importance that we are able to add/remove features at the development phase at any moment. This is why we went forward with this model.
 
 ## Research Material (Updated whenever new content is found)
 
