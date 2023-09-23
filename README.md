@@ -1,116 +1,6 @@
 
-# Team-Earth
+# Title
 Dr. Mom - A multi-functional platform focusing on a holistic approach towards female healthcare.
-
-## Team Members
-
-The project is being prepared under the supervision of Prof. Manoov R by the following team members:
-
-Shruti Pandey (20BCE0665)\
-Gopesh Kumar Pathak (20BCE2870)\
-Nithin Bharath Kumar (20BCE0790)\
-Adam Nellissery Jijo (20BCI0077)\
-Angela Mathews (20BCI0140)
-
-## School
-
-School of Computer Science and Engineering, Vellore Institute of Technology, Vellore.
-
-## Comparative Analysis
-Irregular or unpredictable menstrual cycles can cause inconvenience and discomfort for many women. A period prediction algorithm can aid in managing menstrual health effectively by providing advance notice of upcoming periods. This can help women be better prepared with necessary supplies, manage symptoms such as pain or mood swings, and avoid unexpected disruptions in their daily routines. For women who are trying to conceive or avoid pregnancy, accurate prediction of menstrual cycles can be crucial. A period prediction algorithm can aid in fertility tracking and family planning by helping women identify their fertile window and plan intercourse or contraception accordingly. This can assist couples in achieving or avoiding pregnancy as per their preferences.
-
-The unpredictability of menstrual cycles can impact women’s mental health, causing stress, anxiety, and mood swings. By providing accurate period predictions, a period prediction algorithm can help women better manage their emotional well-being by reducing uncertainty and promoting a sense of control over their menstrual cycles. 
-A period prediction algorithm can be a valuable addition to the growing field of digital health, providing women with a convenient and accessible tool to track their menstrual cycles using smartphones or other devices. This can promote the adoption of digital health solutions and contribute to the advancement of women’s health care. Period prediction algorithms have the potential to be personalized to individual women’s health data, such as menstrual cycle length, flow, and symptoms.
-
-## Dataset and Code for this analysis
-- Dataset is present in the repository in the folder "dataset".
-- Code for this analysis is also present in the repository named "workspace.ipynb".
-
-## Methods used for this comparative analysis
-- SGD Regressor: SGD (Stochastic Gradient Descent) Regressor is a type of linear regression algorithm that is particularly well-suited for large datasets or datasets with a high number of features. It updates the model parameters using a small subset of the data at a time, making it computationally efficient and scalable. SGD Regressor uses gradient descent optimization to minimize the error between the predicted and actual target values, allowing it to learn from the data and make predictions for menstrual cycle lengths or other relevant variables based on historical data.
-
-- Random Forest Regressor: Random Forest Regressor is an ensemble learning method that combines multiple decision tree models to make predictions. It can be used for regression tasks in menstrual prediction algorithms to predict cycle length or other relevant variables based on historical data. Random Forest Regressor is capable of handling non-linear relationships in the data and can capture complex patterns and interactions among features. It is also robust to overfitting and can handle missing values in the data. Random Forest Regressor is a powerful method for menstrual prediction algorithms, particularly when there are multiple features and non-linear relationships in the data. 
-
-- Gradient Boosting Regressor: Gradient Boosting Regressor is another ensemble learning method that combines multiple weak learners, such as decision trees, to make predictions. It can be used for regression tasks in menstrual prediction algorithms to predict cycle length or other relevant variables based on historical data. Gradient Boosting Regressor iteratively builds a model by minimizing the residual errors from the previous iteration, which allows for the creation of a strong predictive model. It is particularly effective in capturing complex patterns in the data and can handle large datasets. Gradient Boosting Regressor is a powerful method for improving the accuracy and predictive power of menstrual prediction algorithms.
-
-- Decision Tree Regressor: Decision Tree Regressor is a nonlinear regression algorithm that models decisions or decisions based on the values of input features. It can be used for predicting menstrual cycle lengths or other relevant variables based on historical data. Decision Tree Regressor works by recursively splitting the data based on feature values to create a tree-like structure that predicts the target variable. It is capable of capturing non-linear relationships in the data and can handle both numerical and categorical features. Decision Tree Regressor is relatively simple to implement and interpret, making it a useful method for menstrual prediction algorithms.
-
-- Support Vector Regression (SVR): Support Vector Regression is a powerful algorithm for menstrual prediction models that can accurately predict the length of menstrual cycles based on historical data. SVR requires data preparation, feature engineering, model training, model evaluation, hyperparameter tuning, and model deployment. SVR models can be created using machine learning libraries such as scikit-learn in Python, and hyperparameters such as the kernel type, regularization parameter, and epsilon need to be tuned to optimize the model’s performance.
-
-## Tools used
-- Pandas is a popular data manipulation library in Python that provides data structures such as DataFrame and Series, which are useful for handling and processing large datasets.
-
-- Scikit-learn is a popular machine learning library in Python that provides a wide range of algorithms for classification, regression, clustering, and other machine learning tasks.
-
-- Jupyter Notebook is an open-source web-based environment that allows for the creation and sharing of live code, equations, visualizations, and narratives in a single document.
-
-- Jupyter Notebook allows for easy collaboration and sharing of code and results, making it a useful tool for interdisciplinary teams working on menstrual prediction projects.
-
-## Analysis
-We used the Menstrual Cycle Data (Fehring, Richard 2012) for our analysis. While there was less data than we would have liked to have, it was the best option we found due to the severe lack of publicly available datasets pertaining to menstrual cycles. We had to preprocess the data since it was organized in such a way that only the first row for each client would contain data that would remain the same for the client (eg. age, height, etc). After this was taken care of we conducted an analysis of the dataset with:
-- SGD Regressor (R2 Score = 0.637)
-- Random Forest Regressor (R2 Score = 0.659)
-- Support Vector Regressor (R2 Score = 0.602)
-- Gradient Boosting Regressor (R2 Score = 0.659)
-
-
-## Metrics Used
-- Mean Squared Error (MSE): MSE measures the average squared difference between the predicted and actual values of the target variable. It would quantify how well the app’s predictions match the actual timing of menstrual periods. A lower MSE value indicates more accurate predictions, with smaller errors between predicted and actual values.
-- Mean Absolute Error (MAE): MAE measures the average absolute difference between the predicted and actual values of the target variable. A lower MAE value would indicate smaller average errors in predicting the timing of menstrual periods, which could be beneficial for improving the app’s performance.
-- Median Absolute Error (MedAE): MedAE measures the median of the absolute differences between the predicted and actual values of the target variable. MedAE could provide a robust measure of prediction accuracy, especially when dealing with potential outliers in menstrual data.
-- Explained Variance Score: Explained Variance Score measures the proportion of the variance in the target variable that is explained by the model’s predictions. a higher explained variance score would indicate that the app’s predictions are able to explain a larger proportion of the variability in menstrual period timing, suggesting better accuracy.
-- Max Error: Max Error measures the maximum absolute difference between the predicted and actual values of the target variable. a smaller Max Error value would indicate lower maximum prediction errors, suggesting more accurate predictions and better performance of the app.
-- Mean Poisson Deviance and Mean Gamma Deviance: Mean Poisson Deviance and Mean Gamma Deviance are evaluation metrics commonly used for count data and gamma distributed data, respectively.
-- R2 Score: R2 Score, or the coefficient of determination, measures the proportion of the variance in the target variable that is explained by the model. It is a widely used metric for regression problems, including period prediction apps.
-
-
-## Results
-On comparison of different algorithms, we have found that the Gradient Boosting Regressor is the most suitable algorithm for period analysis according to the metrics like mean squared error, R2 score and Mean Poisson Deviance. The following result has been obtained:
-- Mean Squared Error: 4.199966970581251
-- Mean Absolute Error: 1.507971209647146
-- Median Absolute Error: 1.101829116695658
-- Explained Variance Score: 0.7041641951676936
-- Max Error: 5.843127817959253
-- Mean Poisson Deviance: 0.13602191068145067
-- Mean Gamma Deviance: 0.004462618410575977
-- R2 Score: 0.7017534827057957
-
-![alt text](result1.jpg "Result 1")
-![alt text](result2.jpg "Result 1")
-
-
-## Website Documentation from here on
-## Project Workflow
-
-**Tools Used**
-- GitHub
-- GitHub Desktop / GitHub CLI
-- Zotero
-- Obsidian
-- VSCode
-- Moodle
-- WhatsApp
-- Jira
-
-**Workflow**
-  - We plan on collaborating on code and documentation over GitHub using either GitHub CLI/GitHub Desktop locally. Zotero will be used for keeping track of references, Obsidian for editing Markdown files and maintaining personal knowledge bases and VSCode for writing code.
-Moodle will be used for submissions and communication with the professor, while WhatsApp will be used as the primary means of communication between our group members. Meanwhile Jira will be used to keep track of deadlines and project management.
-The Jira board has also been created to keep track of issues that need to be worked on and assigning contributions. It is also synced with GitHub so that issues can be resolved automatically when a relevant commit is made.
-
-![alt text](WorkBreakdown.jpg "Work Breakdown Diagram")
-
-## Progress Overview
-
-**Project** | **Status** | **Notes**
---- | --- | ---
-Project Title and Purpose | `Completed` | The idea suggested by Gopesh and after consideration along with a discussion on the topic and also comparing the 2 ideas that were presented, we moved on with this one and concluded to move ahead with the next part of the process.
-Research | `Launched` | All members will be researching various already deployed applications which would help in building the general concept and functionalities the app would need. Also, what features users will be expecting from Dr. Mom. Not only this but the drawbacks which other apps already have will be discussed and tried to resolve.
-Features/Functionalities | `Launched` | All the features we require in the app, are put forward by all the members of the group, and implementation of the same is discussed. This is a research-oriented process and would be completed as the project moves ahead.
-Design and Layout | `Launched` | The General UI/UX layout will be created once the functionalities are finalized, Angela along with Shruti will work on a suitable UI design for a cross-platform application (Android & IOS).
-Website | `Started on with` | Nithin would be focusing on the initial website which would display the idea and concept of the application and then the deployment would be aided by Gopesh and Adam.
-Front-End Development | `Started with the design` | Once all the features/functionalities and requirements are discussed and finalized, Angela, Adam, Gopesh, Nithin, Shruti will be working on the front end (Client-side) of the application to complete each page of the application. This part of the project should take around 25 days – 1.5 months (depending on the functionalities).
-Back-End Development | `Started` | Gopesh and Adam will work on the back-end (server-side) part of the project which will span over a month and a half. Apart from this, setting up the database would be Nithin, Gopesh, and Adam’s part.
-Testing | `Not Started` | To be started once the application is deployed.
 
 ## Project Overview
 
@@ -141,11 +31,8 @@ Combines multiple functions: The multifunctional nature of Dr. Mom allows women 
 
 ## Tools/Software
 
-- React Native: An open-source framework for building native mobile apps using JavaScript and React.
-- Node.js and npm: JavaScript runtime environment and a package manager for Node.js.
-- React Native CLI: Command-line interface for React Native development.
+- Django Framework
 - Code Editor: For writing and editing the source code of your React Native app. Examples: Visual Studio Code, Atom, Sublime Text.
-- Android Studio or Xcode: IDEs for developing and testing Android and iOS apps.
 - Firebase or another backend service: For storing and retrieving data.
 - Charting libraries: To display menstrual cycle data. Examples: react-native-chart-kit, react-native-charts-wrapper, react-native-highcharts.
 - Device sensors and APIs: For tracking menstrual health data.
@@ -153,7 +40,7 @@ Combines multiple functions: The multifunctional nature of Dr. Mom allows women 
 
 ## Technical Details
 
-The app will be based primarily on Android given that iOS already has its own health app which has multiple features within itself, but the overall idea will be based on improving those features and bringing in better novelties into the product, and then creating an iOS alternative for the same. For the tech stack, the team will be trying to create a cross-platform app through React Native or Xamarin, or Flutter, depending on the complexities of the functionalities of the application. Figma and Adobe XD will be used for prototyping and initial display. The expected completion time for the project is 3.5-4.5 months with most of the functionalities expected to be fulfilled.
+The app will be based primarily on Android given that iOS already has its own health webapp which has multiple features within itself, but the overall idea will be based on improving those features and bringing in better novelties into the product, and then creating an iOS alternative for the same. For the tech stack, the team will be trying to create a cross-platform app through React Native or Xamarin, or Flutter, depending on the complexities of the functionalities of the application. Figma and Adobe XD will be used for prototyping and initial display. The expected completion time for the project is 3.5-4.5 months with most of the functionalities expected to be fulfilled.
 
 ## Research Material (Updated whenever new content is found)
 
